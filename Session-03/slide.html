@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      #container {
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain;
+        height: 100vh;
+        background-image: url("Images/image3.png");
+        width: 100%;
+      }
+      img {
+        height: 30px;
+        width: 30px;
+        background-color: aliceblue;
+      }
+      .prev {
+        position: absolute;
+        top: 50%;
+        transform: rotate(180deg);
+      }
+      .next {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+      }
+      .miniitem {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        opacity: 0.5;
+      }
+      .myimg .active {
+        transition-duration: 1s;
+        opacity: 1;
+        scale: 1.1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <img class="prev" onclick="prev()" src="Images/arrow.png" alt="" />
+
+      <img class="next" onclick="next()" src="Images/arrow.png" alt="" />
+
+      <div class="miniImg">
+        <img class="myimg active" src="Images/image3.png" alt="" />
+        <img class="myimg" src="Images/image1.png" alt="" />
+        <img class="myimg" src="Images/image2.png" alt="" />
+      </div>
+    </div>
+  </body>
+  <script src="slide.js"></script>
+</html>

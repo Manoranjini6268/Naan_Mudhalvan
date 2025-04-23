@@ -1,0 +1,49 @@
+#container {
+  margin-top: 30px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 40px 30px;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.whole {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border: 2px solid grey;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.price {
+  border: none;
+  background-color: transparent;
+  margin-top: 0;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+}
+.title {
+  border: none;
+  background-color: transparent;
+  width: 200px;
+  height: 60px;
+}
+.add {
+  background-color: blue;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+}
+.shopsy {
+  background-color: black;
+  height: 100px;
+  color: white;
+}
+* {
+  margin: 0;
+}
